@@ -273,4 +273,3 @@ supplierapi/media/
 
 .env
 .envs/*
-!.envs/.local/
