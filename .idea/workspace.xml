@@ -10,7 +10,57 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0029b429-1960-48c9-a527-7c39b6756828" name="Default Changelist" comment="" />
+    <list default="true" id="0029b429-1960-48c9-a527-7c39b6756828" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/migrations/0002_auto_20201022_2038.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.envs/.local/.django" beforeDir="false" afterPath="$PROJECT_DIR$/.envs/.local/.django" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/api_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/api_router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/merge_production_dotenvs_in_dotenv.py" beforeDir="false" afterPath="$PROJECT_DIR$/merge_production_dotenvs_in_dotenv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements/base.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/base.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/supplierapi/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/contrib/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/contrib/sites/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/contrib/sites/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/contrib/sites/migrations/0002_alter_domain_unique.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/contrib/sites/migrations/0003_set_site_domain_and_name.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/contrib/sites/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/users/adapters.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/users/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/users/api/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/users/api/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/users/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/users/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/users/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/users/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/users/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/users/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/users/tests/factories.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/users/tests/test_drf_urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/users/tests/test_drf_views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/users/tests/test_forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/users/tests/test_models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/users/tests/test_urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/users/tests/test_views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/users/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/users/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/install_os_dependencies.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/install_python_dependencies.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/requirements-bionic.apt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/requirements-buster.apt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/requirements-jessie.apt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/requirements-stretch.apt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/requirements-trusty.apt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/requirements-xenial.apt" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +95,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
-  <component name="RunManager" selected="Django Server.migrate" />
+  <component name="RunManager" selected="Django Server.runserver" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -59,6 +109,10 @@
       <workItem from="1603283894963" duration="10000" />
       <workItem from="1603283906601" duration="7278000" />
       <workItem from="1603298418877" duration="1083000" />
+      <workItem from="1603351270249" duration="2694000" />
+      <workItem from="1603377835787" duration="3185000" />
+      <workItem from="1603381250357" duration="2222000" />
+      <workItem from="1603384828676" duration="6762000" />
     </task>
     <servers />
   </component>
@@ -75,6 +129,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="625" y="235" width="732" height="644" key="#Inspections" timestamp="1603298471011">
@@ -85,15 +140,31 @@
       <screen x="364" y="1440" width="1920" height="1080" />
     </state>
     <state x="1143" y="1751" width="424" height="491" key="FileChooserDialogImpl/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1603283902840" />
+    <state width="901" height="238" key="GridCell.Tab.0.bottom" timestamp="1603392835537">
+      <screen x="364" y="1440" width="1920" height="1080" />
+    </state>
+    <state width="901" height="238" key="GridCell.Tab.0.bottom/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1603392835537" />
+    <state width="901" height="238" key="GridCell.Tab.0.center" timestamp="1603392835537">
+      <screen x="364" y="1440" width="1920" height="1080" />
+    </state>
+    <state width="901" height="238" key="GridCell.Tab.0.center/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1603392835537" />
+    <state width="901" height="238" key="GridCell.Tab.0.left" timestamp="1603392835536">
+      <screen x="364" y="1440" width="1920" height="1080" />
+    </state>
+    <state width="901" height="238" key="GridCell.Tab.0.left/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1603392835536" />
+    <state width="901" height="238" key="GridCell.Tab.0.right" timestamp="1603392835537">
+      <screen x="364" y="1440" width="1920" height="1080" />
+    </state>
+    <state width="901" height="238" key="GridCell.Tab.0.right/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1603392835537" />
     <state x="539" y="210" width="974" height="737" key="SettingsEditor" timestamp="1603298523532">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="849" y="1628" width="1022" height="737" key="SettingsEditor/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1603288608858" />
     <state x="539" y="210" width="974" height="737" key="SettingsEditor/364.1440.1920.1080/72.27.1848.1053@72.27.1848.1053" timestamp="1603298523532" />
-    <state x="1051" y="1602" width="618" height="783" key="find.popup" timestamp="1603295370341">
+    <state x="1107" y="1665" width="863" height="783" key="find.popup" timestamp="1603393367094">
       <screen x="364" y="1440" width="1920" height="1080" />
     </state>
-    <state x="1051" y="1602" width="618" height="783" key="find.popup/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1603295370341" />
+    <state x="1107" y="1665" width="863" height="783" key="find.popup/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1603393367094" />
     <state x="1023" y="1699" width="672" height="678" key="search.everywhere.popup" timestamp="1603294112332">
       <screen x="364" y="1440" width="1920" height="1080" />
     </state>

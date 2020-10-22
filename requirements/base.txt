@@ -4,12 +4,14 @@ argon2-cffi==20.1.0  # https://github.com/hynek/argon2_cffi
 
 # Django
 # ------------------------------------------------------------------------------
-django==3.1.2  # pyup: < 3.1  # https://www.djangoproject.com/
+django==3.0.10  # pyup: < 3.1  # https://www.djangoproject.com/
 django-environ==0.4.5  # https://github.com/joke2k/django-environ
 # django-model-utils==4.0.0  # https://github.com/jazzband/django-model-utils
 # django-redis==4.12.1  # https://github.com/jazzband/django-redis
 django-storages[azure]==1.10.1  # https://github.com/jschneier/django-storages
 django-anymail[mailjet]==8.1  # https://github.com/anymail/django-anymail
+django-mssql-backend==2.8.1
+pyodbc==4.0.30
 
 # REST
 djangorestframework==3.12.1

@@ -1,5 +1,45 @@
+# IPYTHONDIR=/app/.ipython
+
 # General
 # ------------------------------------------------------------------------------
-USE_DOCKER=yes
-IPYTHONDIR=/app/.ipython
+# DJANGO_READ_DOT_ENV_FILE=True
 DJANGO_DEBUG=True
+DJANGO_SETTINGS_MODULE=config.settings.production
+DJANGO_SECRET_KEY=D0ps5LGzl9ZEF0huNiZ1r6ynE7nMAZ7SZyHNXaUsJSqin4KiK2D7kDQtb4nI9vPw
+DJANGO_ADMIN_URL=admin/
+DJANGO_ALLOWED_HOSTS=*
+
+# Security
+# ------------------------------------------------------------------------------
+# TIP: better off using DNS, however, redirect is OK too
+DJANGO_SECURE_SSL_REDIRECT=True
+
+# Email
+# ------------------------------------------------------------------------------
+# DJANGO_SERVER_EMAIL=
+
+MAILJET_API_KEY=
+MAILJET_SECRET_KEY=
+MAILJET_API_URL=
+
+# Gunicorn
+# ------------------------------------------------------------------------------
+WEB_CONCURRENCY=4
+
+
+# Redis
+# ------------------------------------------------------------------------------
+# REDIS_URL=redis://redis:6379/0
+
+# Database
+SQL_ENGINE=sql_server.pyodbc
+SQL_DATABASE=service-db
+SQL_USER=karolguzikowski
+SQL_PASSWORD=1999Karol8505platform2020
+SQL_HOST=supplier-service.database.windows.net
+SQL_PORT=1433
+
+# storage
+AZURE_STORAGE_NAME=supplierapi
+AZURE_STORAGE_MEDIA_CONTAINER=media
+AZURE_STORAGE_KEY=arRngakfjK9r1LfW1Hre+IRHSZlV5Dn2DhInDSYbki4lLTIr6jBPhT46t49JVoVAeewVs3bIjj0WNnnoZ7IgMQ==

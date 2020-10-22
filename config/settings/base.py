@@ -14,6 +14,8 @@ READ_DOT_ENV_FILE = env.bool("DJANGO_READ_DOT_ENV_FILE", default=False)
 if READ_DOT_ENV_FILE:
     # OS environment variables take precedence over variables from .env
     env.read_env(str(ROOT_DIR / ".env"))
+else:
+    env.read_env(str(ROOT_DIR / ".envs/.local/.django"))
 
 # GENERAL
 # ------------------------------------------------------------------------------
@@ -43,11 +45,11 @@ DATABASES = {
         "ENGINE": env.str("SQL_ENGINE"),
         "NAME": env.str("SQL_DATABASE"),
         "USER": env.str("SQL_USER"),
-        "PASSWORD": env.str("SQL_PASSWORD", "password"),
-        "HOST": env.str("SQL_HOST", "localhost"),
-        "PORT": env.str("SQL_PORT", "5432"),
+        "PASSWORD": env.str("SQL_PASSWORD"),
+        "HOST": env.str("SQL_HOST"),
+        "PORT": env.str("SQL_PORT"),
         "OPTIONS": {
-            'driver': 'ODBC Driver 17 for SQL Server',
+            "driver": "ODBC Driver 17 for SQL Server",
         },
     }
 }
@@ -68,14 +70,12 @@ DJANGO_APPS = [
     "django.contrib.sites",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    # "django.contrib.humanize", # Handy template tags
     "django.contrib.admin",
-    "django.forms",
 ]
 THIRD_PARTY_APPS = []
 
 LOCAL_APPS = [
-    "supplierapi.users.apps.UsersConfig",
+    "supplierapi.apps.myAuth.apps.AuthConfig",
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -84,7 +84,7 @@ INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 # MIGRATIONS
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#migration-modules
-MIGRATION_MODULES = {"sites": "supplierapi.contrib.sites.migrations"}
+# MIGRATION_MODULES = {"sites": "supplierapi.contrib.sites.migrations"}
 
 # AUTHENTICATION
 # ------------------------------------------------------------------------------
@@ -93,7 +93,7 @@ MIGRATION_MODULES = {"sites": "supplierapi.contrib.sites.migrations"}
 #     "django.contrib.auth.backends.ModelBackend",
 # ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#auth-user-model
-AUTH_USER_MODEL = "users.User"
+AUTH_USER_MODEL = "myAuth.User"
 
 # PASSWORDS
 # ------------------------------------------------------------------------------
@@ -147,15 +147,15 @@ STATICFILES_FINDERS = [
 # https://docs.djangoproject.com/en/dev/ref/settings/#templates
 TEMPLATES = [
     {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
+        "BACKEND": "django.template.backends.django.DjangoTemplates",
+        "DIRS": [],
+        "APP_DIRS": True,
+        "OPTIONS": {
+            "context_processors": [
+                "django.template.context_processors.debug",
+                "django.template.context_processors.request",
+                "django.contrib.auth.context_processors.auth",
+                "django.contrib.messages.context_processors.messages",
             ],
         },
     },
@@ -183,9 +183,7 @@ DEFAULT_FROM_EMAIL = env(
 # https://docs.djangoproject.com/en/dev/ref/settings/#server-email
 SERVER_EMAIL = env("DJANGO_SERVER_EMAIL", default=DEFAULT_FROM_EMAIL)
 # https://docs.djangoproject.com/en/dev/ref/settings/#email-subject-prefix
-EMAIL_SUBJECT_PREFIX = env(
-    "DJANGO_EMAIL_SUBJECT_PREFIX", default="[supplierAPI]"
-)
+EMAIL_SUBJECT_PREFIX = env("DJANGO_EMAIL_SUBJECT_PREFIX", default="[supplierAPI]")
 
 # Anymail
 # ------------------------------------------------------------------------------
@@ -238,13 +236,13 @@ LOGGING = {
 # ------------------------------------------------------------------------------
 # https://django-storages.readthedocs.io/en/latest/#installation
 INSTALLED_APPS += ["storages"]  # noqa F405
-DEFAULT_FILE_STORAGE = 'backend.custom_azure.AzureMediaStorage'
+DEFAULT_FILE_STORAGE = "backend.custom_azure.AzureMediaStorage"
 
-MEDIA_LOCATION = env.str('AZURE_STORAGE_MEDIA_CONTAINER')
+MEDIA_LOCATION = env.str("AZURE_STORAGE_MEDIA_CONTAINER")
 
-AZURE_ACCOUNT_NAME = env.str('AZURE_STORAGE_NAME')
-AZURE_CUSTOM_DOMAIN = f'{AZURE_ACCOUNT_NAME}.blob.core.windows.net'
-MEDIA_URL = f'https://{AZURE_CUSTOM_DOMAIN}/{MEDIA_LOCATION}/'
+AZURE_ACCOUNT_NAME = env.str("AZURE_STORAGE_NAME")
+AZURE_CUSTOM_DOMAIN = f"{AZURE_ACCOUNT_NAME}.blob.core.windows.net"
+MEDIA_URL = f"https://{AZURE_CUSTOM_DOMAIN}/{MEDIA_LOCATION}/"
 
 
 # Your stuff...
