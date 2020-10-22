@@ -46,7 +46,6 @@ class User(AbstractUser):
     email = models.EmailField(help_text="email address", unique=True)
 
     USERNAME_FIELD = "email"
-    # REQUIRED_FIELDS = ['email', 'first_name', 'last_name']
     REQUIRED_FIELDS = []
 
     objects = UserManager()
