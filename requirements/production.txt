@@ -1,6 +1,6 @@
 # PRECAUTION: avoid production dependencies that aren't in development
 
--r requirements_base.txt
+-r base.txt
 
 gunicorn==20.0.4  # https://github.com/benoitc/gunicorn
 # sentry-sdk==0.19.1  # https://github.com/getsentry/sentry-python
