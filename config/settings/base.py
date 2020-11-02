@@ -43,15 +43,16 @@ USE_TZ = True
 DATABASES = {
     "default": {
         "ENGINE": env.str("SQL_ENGINE"),
-        "NAME": env.str("SQL_DATABASE"),
-        "USER": env.str("SQL_USER"),
-        "PASSWORD": env.str("SQL_PASSWORD"),
-        "HOST": env.str("SQL_HOST"),
-        "PORT": env.str("SQL_PORT"),
-        "OPTIONS": {
-            "driver": "ODBC Driver 17 for SQL Server",
+        "ENFORCE_SCHEMA": False,
+        "CLIENT": {
+            "host": env.str("SQL_HOST"),
+            "port": env.int("SQL_PORT"),
+            "username": env.str("SQL_USERNAME"),
+            "password": env.str("SQL_PASSWORD"),
+            "retrywrites": False,
+            "ssl": True,
         },
-    }
+    },
 }
 
 # URLS
@@ -71,11 +72,14 @@ DJANGO_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django.contrib.admin",
+    "rest_framework",
+    "rest_framework.authtoken",
 ]
 THIRD_PARTY_APPS = []
 
 LOCAL_APPS = [
     "supplierapi.apps.myAuth.apps.AuthConfig",
+    "supplierapi.apps.Company.apps.CompanyConfig",
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -89,9 +93,9 @@ INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 # AUTHENTICATION
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#authentication-backends
-# AUTHENTICATION_BACKENDS = [
-#     "django.contrib.auth.backends.ModelBackend",
-# ]
+AUTHENTICATION_BACKENDS = [
+    "supplierapi.apps.myAuth.authentication_backend.CustomAuthBackend"
+]
 # https://docs.djangoproject.com/en/dev/ref/settings/#auth-user-model
 AUTH_USER_MODEL = "myAuth.User"
 

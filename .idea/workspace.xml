@@ -11,11 +11,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0029b429-1960-48c9-a527-7c39b6756828" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/supplierapi/apps/Company/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supplierapi/apps/Company/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supplierapi/apps/Company/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supplierapi/apps/Company/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supplierapi/apps/Company/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supplierapi/apps/Company/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supplierapi/apps/Company/pkd_options.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supplierapi/apps/Company/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supplierapi/apps/Company/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/authentication_backend.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/azure_pre_build.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements/base.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements/local.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements/production.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/merge_production_dotenvs_in_dotenv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements_base.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements_base.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/setup.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/apps/myAuth/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/apps/myAuth/migrations/0002_auto_20201022_2038.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/apps/myAuth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/apps/myAuth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +64,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pkd_html_to_dict" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -56,7 +72,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -82,7 +98,13 @@
       <workItem from="1603377835787" duration="3185000" />
       <workItem from="1603381250357" duration="2222000" />
       <workItem from="1603384828676" duration="7755000" />
-      <workItem from="1603445947856" duration="4172000" />
+      <workItem from="1603445947856" duration="6303000" />
+      <workItem from="1603898640999" duration="4831000" />
+      <workItem from="1603922340860" duration="3638000" />
+      <workItem from="1603963435721" duration="3586000" />
+      <workItem from="1603992141171" duration="8301000" />
+      <workItem from="1604065690247" duration="10597000" />
+      <workItem from="1604344484450" duration="9403000" />
     </task>
     <servers />
   </component>
@@ -106,38 +128,38 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="625" y="235" width="732" height="644" key="#Inspections/364.1440.1920.1080/72.27.1848.1053@72.27.1848.1053" timestamp="1603298471011" />
-    <state x="1143" y="1751" width="424" height="491" key="FileChooserDialogImpl" timestamp="1603283902840">
+    <state x="1143" y="1751" width="424" height="491" key="FileChooserDialogImpl" timestamp="1604076770969">
       <screen x="364" y="1440" width="1920" height="1080" />
     </state>
-    <state x="1143" y="1751" width="424" height="491" key="FileChooserDialogImpl/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1603283902840" />
-    <state width="1802" height="238" key="GridCell.Tab.0.bottom" timestamp="1603399917136">
+    <state x="1143" y="1751" width="424" height="491" key="FileChooserDialogImpl/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604076770969" />
+    <state width="1802" height="413" key="GridCell.Tab.0.bottom" timestamp="1604353610871">
       <screen x="364" y="1440" width="1920" height="1080" />
     </state>
-    <state width="1802" height="238" key="GridCell.Tab.0.bottom/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1603399917136" />
-    <state width="1802" height="238" key="GridCell.Tab.0.center" timestamp="1603399917136">
+    <state width="1802" height="413" key="GridCell.Tab.0.bottom/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604353610871" />
+    <state width="1802" height="413" key="GridCell.Tab.0.center" timestamp="1604353610870">
       <screen x="364" y="1440" width="1920" height="1080" />
     </state>
-    <state width="1802" height="238" key="GridCell.Tab.0.center/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1603399917136" />
-    <state width="1802" height="238" key="GridCell.Tab.0.left" timestamp="1603399917135">
+    <state width="1802" height="413" key="GridCell.Tab.0.center/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604353610870" />
+    <state width="1802" height="413" key="GridCell.Tab.0.left" timestamp="1604353610870">
       <screen x="364" y="1440" width="1920" height="1080" />
     </state>
-    <state width="1802" height="238" key="GridCell.Tab.0.left/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1603399917135" />
-    <state width="1802" height="238" key="GridCell.Tab.0.right" timestamp="1603399917136">
+    <state width="1802" height="413" key="GridCell.Tab.0.left/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604353610870" />
+    <state width="1802" height="413" key="GridCell.Tab.0.right" timestamp="1604353610870">
       <screen x="364" y="1440" width="1920" height="1080" />
     </state>
-    <state width="1802" height="238" key="GridCell.Tab.0.right/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1603399917136" />
-    <state x="539" y="210" width="974" height="737" key="SettingsEditor" timestamp="1603298523532">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state width="1802" height="413" key="GridCell.Tab.0.right/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604353610870" />
+    <state x="849" y="1628" width="974" height="737" key="SettingsEditor" timestamp="1604068140612">
+      <screen x="364" y="1440" width="1920" height="1080" />
     </state>
-    <state x="849" y="1628" width="1022" height="737" key="SettingsEditor/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1603288608858" />
+    <state x="849" y="1628" width="1022" height="737" key="SettingsEditor/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604068140612" />
     <state x="539" y="210" width="974" height="737" key="SettingsEditor/364.1440.1920.1080/72.27.1848.1053@72.27.1848.1053" timestamp="1603298523532" />
-    <state x="1107" y="1665" width="863" height="783" key="find.popup" timestamp="1603393367094">
+    <state x="1107" y="1665" width="863" height="783" key="find.popup" timestamp="1604350684564">
       <screen x="364" y="1440" width="1920" height="1080" />
     </state>
-    <state x="1107" y="1665" width="863" height="783" key="find.popup/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1603393367094" />
-    <state x="1023" y="1699" width="672" height="678" key="search.everywhere.popup" timestamp="1603294112332">
+    <state x="1107" y="1665" width="863" height="783" key="find.popup/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604350684564" />
+    <state x="1023" y="1699" width="672" height="678" key="search.everywhere.popup" timestamp="1603993351203">
       <screen x="364" y="1440" width="1920" height="1080" />
     </state>
-    <state x="1023" y="1699" width="672" height="678" key="search.everywhere.popup/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1603294112332" />
+    <state x="1023" y="1699" width="672" height="678" key="search.everywhere.popup/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1603993351203" />
   </component>
 </project>

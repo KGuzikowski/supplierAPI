@@ -1,5 +1,6 @@
 from django.contrib.auth.models import AbstractUser, BaseUserManager
 from django.db import models
+from djongo.models import ObjectIdField
 
 
 class UserManager(BaseUserManager):
@@ -39,8 +40,9 @@ class UserManager(BaseUserManager):
 class User(AbstractUser):
     """Default user for supplierAPI."""
 
-    name = None
+    username = None
 
+    _id = ObjectIdField(primary_key=True)
     first_name = models.CharField(help_text="first name", max_length=150)
     last_name = models.CharField(help_text="last name", max_length=150)
     email = models.EmailField(help_text="email address", unique=True)
