@@ -45,21 +45,26 @@ class Address(models.Model):
         return f"{self.street} {self.city}"
 
 
+def company_directory_path(instance, filename):
+    return f"companies/{instance.pk}/{filename}"
+
+
 class Company(models.Model):
+    _id = models.ObjectIdField(primary_key=True)
     STATUS_CHOICES = [
         (0, "active"),
         (1, "inactive"),
     ]
-    status = models.IntegerField(choices=STATUS_CHOICES)
-    name = models.TextField(unique=True)
-    name_short = models.CharField(max_length=40)
-    description = models.TextField()
-    owners = models.ArrayField(model_container=Person)
-    staff = models.ArrayField(model_container=Employee)
-    roles = models.ArrayField(model_container=Role)
-    ceo = models.ArrayField(model_container=Person)
-    address = models.EmbeddedField(model_container=Address)
-    localizations = models.ArrayField(model_container=Address)
+    status = models.IntegerField(choices=STATUS_CHOICES, null=False, blank=False)
+    name = models.TextField(unique=True, null=False, blank=False)
+    short_name = models.CharField(max_length=40, default=None)
+    description = models.TextField(null=False, blank=False)
+    profile_image = models.ImageField(default=None, upload_to=company_directory_path)
+    owners = models.ArrayField(model_container=Person, default=[])
+    staff = models.ArrayField(model_container=Employee, default=[])
+    roles = models.ArrayField(model_container=Role, default=[])
+    address = models.EmbeddedField(model_container=Address, null=False, blank=False)
+    localizations = models.ArrayField(model_container=Address, default=[])
 
     LEGAL_FORM_CHOICES = [
         (0, "jednoosobowa działalność gospodarcza"),
@@ -74,9 +79,11 @@ class Company(models.Model):
         (9, "szkoła/uczelnia wyższa"),
         (10, "inne"),
     ]
-    legal_form = models.IntegerField(choices=LEGAL_FORM_CHOICES)
-    nip = models.CharField(max_length=10)
-    pkd = models.CharField(max_length=11, choices=PKD_OPTIONS)
+    legal_form = models.IntegerField(
+        choices=LEGAL_FORM_CHOICES, null=False, blank=False
+    )
+    nip = models.CharField(max_length=10, null=False, blank=False)
+    pkd = models.CharField(max_length=11, choices=PKD_OPTIONS, null=False, blank=False)
 
     created_at = models.DateField(blank=False, null=False, auto_now_add=True)
 

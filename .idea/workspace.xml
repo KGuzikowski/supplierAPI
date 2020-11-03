@@ -12,7 +12,12 @@
   <component name="ChangeListManager">
     <list default="true" id="0029b429-1960-48c9-a527-7c39b6756828" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/apps/Company/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/supplierapi/apps/Company/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/apps/Company/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/apps/Company/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/supplierapi/apps/Company/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/apps/myAuth/authentication_backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/authentication_backend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/apps/myAuth/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/apps/myAuth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +93,7 @@
       <workItem from="1604344484450" duration="9403000" />
       <workItem from="1604414117030" duration="4639000" />
       <workItem from="1604424686091" duration="4988000" />
-      <workItem from="1604429786113" duration="1768000" />
+      <workItem from="1604429786113" duration="7566000" />
     </task>
     <servers />
   </component>
@@ -116,26 +121,30 @@
       <screen x="364" y="1440" width="1920" height="1080" />
     </state>
     <state x="818" y="1651" key="#com.intellij.execution.impl.EditConfigurationsDialog/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604425854188" />
+    <state x="536" y="1567" width="1648" height="853" key="DiffContextDialog" timestamp="1604432454611">
+      <screen x="364" y="1440" width="1920" height="1080" />
+    </state>
+    <state x="536" y="1567" width="1648" height="853" key="DiffContextDialog/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604432454611" />
     <state x="1143" y="1751" width="424" height="491" key="FileChooserDialogImpl" timestamp="1604076770969">
       <screen x="364" y="1440" width="1920" height="1080" />
     </state>
     <state x="1143" y="1751" width="424" height="491" key="FileChooserDialogImpl/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604076770969" />
-    <state width="1802" height="277" key="GridCell.Tab.0.bottom" timestamp="1604431014410">
+    <state width="1802" height="288" key="GridCell.Tab.0.bottom" timestamp="1604438420147">
       <screen x="364" y="1440" width="1920" height="1080" />
     </state>
-    <state width="1802" height="277" key="GridCell.Tab.0.bottom/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604431014410" />
-    <state width="1802" height="277" key="GridCell.Tab.0.center" timestamp="1604431014410">
+    <state width="1802" height="288" key="GridCell.Tab.0.bottom/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604438420147" />
+    <state width="1802" height="288" key="GridCell.Tab.0.center" timestamp="1604438420147">
       <screen x="364" y="1440" width="1920" height="1080" />
     </state>
-    <state width="1802" height="277" key="GridCell.Tab.0.center/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604431014410" />
-    <state width="1802" height="277" key="GridCell.Tab.0.left" timestamp="1604431014410">
+    <state width="1802" height="288" key="GridCell.Tab.0.center/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604438420147" />
+    <state width="1802" height="288" key="GridCell.Tab.0.left" timestamp="1604438420147">
       <screen x="364" y="1440" width="1920" height="1080" />
     </state>
-    <state width="1802" height="277" key="GridCell.Tab.0.left/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604431014410" />
-    <state width="1802" height="277" key="GridCell.Tab.0.right" timestamp="1604431014410">
+    <state width="1802" height="288" key="GridCell.Tab.0.left/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604438420147" />
+    <state width="1802" height="288" key="GridCell.Tab.0.right" timestamp="1604438420147">
       <screen x="364" y="1440" width="1920" height="1080" />
     </state>
-    <state width="1802" height="277" key="GridCell.Tab.0.right/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604431014410" />
+    <state width="1802" height="288" key="GridCell.Tab.0.right/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604438420147" />
     <state x="849" y="1628" width="974" height="737" key="SettingsEditor" timestamp="1604068140612">
       <screen x="364" y="1440" width="1920" height="1080" />
     </state>
