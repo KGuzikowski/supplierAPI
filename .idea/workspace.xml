@@ -12,37 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0029b429-1960-48c9-a527-7c39b6756828" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.pre-commit-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.pre-commit-config.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_source/howto.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_source/index.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_source/pycharm/configuration.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_source/pycharm/images/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_source/pycharm/images/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_source/pycharm/images/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_source/pycharm/images/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_source/pycharm/images/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_source/pycharm/images/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_source/pycharm/images/f1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_source/pycharm/images/f2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_source/pycharm/images/f3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_source/pycharm/images/f4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_source/pycharm/images/issue1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_source/pycharm/images/issue2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_source/users.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/make.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements_base.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements_base.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements_local.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements_local.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/setup.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/supplierapi/apps/Company/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/supplierapi/apps/Company/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/supplierapi/apps/myAuth/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/supplierapi/apps/myAuth/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/supplierapi/apps/myAuth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/supplierapi/utils/storages.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +88,7 @@
       <workItem from="1604344484450" duration="9403000" />
       <workItem from="1604414117030" duration="4639000" />
       <workItem from="1604424686091" duration="4988000" />
-      <workItem from="1604429786113" duration="1577000" />
+      <workItem from="1604429786113" duration="1768000" />
     </task>
     <servers />
   </component>

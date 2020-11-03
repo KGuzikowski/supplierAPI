@@ -72,10 +72,12 @@ DJANGO_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django.contrib.admin",
+]
+
+THIRD_PARTY_APPS = [
     "rest_framework",
     "rest_framework.authtoken",
 ]
-THIRD_PARTY_APPS = []
 
 LOCAL_APPS = [
     "supplierapi.apps.myAuth.apps.AuthConfig",
