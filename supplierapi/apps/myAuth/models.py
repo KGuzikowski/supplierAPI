@@ -1,6 +1,5 @@
 from django.contrib.auth.models import AbstractUser, BaseUserManager
-from django.db import models
-from djongo.models import ObjectIdField
+from djongo import models
 
 
 class UserManager(BaseUserManager):
@@ -37,15 +36,20 @@ class UserManager(BaseUserManager):
         return self._create_user(email, password, **extra_fields)
 
 
+def user_directory_path(instance, filename):
+    return f"users/{instance.pk}/{filename}"
+
+
 class User(AbstractUser):
     """Default user for supplierAPI."""
 
     username = None
 
-    _id = ObjectIdField(primary_key=True)
+    _id = models.ObjectIdField(primary_key=True)
     first_name = models.CharField(help_text="first name", max_length=150)
     last_name = models.CharField(help_text="last name", max_length=150)
     email = models.EmailField(help_text="email address", unique=True)
+    profile_image = models.ImageField(default=None, upload_to=user_directory_path)
 
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []

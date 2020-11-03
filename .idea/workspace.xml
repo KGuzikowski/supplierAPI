@@ -11,27 +11,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0029b429-1960-48c9-a527-7c39b6756828" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/supplierapi/apps/Company/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/supplierapi/apps/Company/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/supplierapi/apps/Company/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/supplierapi/apps/Company/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/supplierapi/apps/Company/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/supplierapi/apps/Company/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/supplierapi/apps/Company/pkd_options.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/supplierapi/apps/Company/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/supplierapi/apps/Company/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/authentication_backend.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pre-commit-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.pre-commit-config.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings/base.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/merge_production_dotenvs_in_dotenv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_source/howto.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_source/index.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_source/pycharm/configuration.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_source/pycharm/images/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_source/pycharm/images/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_source/pycharm/images/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_source/pycharm/images/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_source/pycharm/images/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_source/pycharm/images/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_source/pycharm/images/f1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_source/pycharm/images/f2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_source/pycharm/images/f3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_source/pycharm/images/f4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_source/pycharm/images/issue1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_source/pycharm/images/issue2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_source/users.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/conf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/make.bat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements_base.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements_base.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements_local.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements_local.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/setup.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/apps/Company/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/supplierapi/apps/Company/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/apps/myAuth/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/supplierapi/apps/myAuth/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/supplierapi/apps/myAuth/migrations/0002_auto_20201022_2038.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/supplierapi/apps/myAuth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/supplierapi/apps/myAuth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/utils/storages.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +116,9 @@
       <workItem from="1603992141171" duration="8301000" />
       <workItem from="1604065690247" duration="10597000" />
       <workItem from="1604344484450" duration="9403000" />
+      <workItem from="1604414117030" duration="4639000" />
+      <workItem from="1604424686091" duration="4988000" />
+      <workItem from="1604429786113" duration="1577000" />
     </task>
     <servers />
   </component>
@@ -128,38 +142,42 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="625" y="235" width="732" height="644" key="#Inspections/364.1440.1920.1080/72.27.1848.1053@72.27.1848.1053" timestamp="1603298471011" />
+    <state x="818" y="1651" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604425854188">
+      <screen x="364" y="1440" width="1920" height="1080" />
+    </state>
+    <state x="818" y="1651" key="#com.intellij.execution.impl.EditConfigurationsDialog/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604425854188" />
     <state x="1143" y="1751" width="424" height="491" key="FileChooserDialogImpl" timestamp="1604076770969">
       <screen x="364" y="1440" width="1920" height="1080" />
     </state>
     <state x="1143" y="1751" width="424" height="491" key="FileChooserDialogImpl/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604076770969" />
-    <state width="1802" height="413" key="GridCell.Tab.0.bottom" timestamp="1604353610871">
+    <state width="1802" height="277" key="GridCell.Tab.0.bottom" timestamp="1604431014410">
       <screen x="364" y="1440" width="1920" height="1080" />
     </state>
-    <state width="1802" height="413" key="GridCell.Tab.0.bottom/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604353610871" />
-    <state width="1802" height="413" key="GridCell.Tab.0.center" timestamp="1604353610870">
+    <state width="1802" height="277" key="GridCell.Tab.0.bottom/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604431014410" />
+    <state width="1802" height="277" key="GridCell.Tab.0.center" timestamp="1604431014410">
       <screen x="364" y="1440" width="1920" height="1080" />
     </state>
-    <state width="1802" height="413" key="GridCell.Tab.0.center/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604353610870" />
-    <state width="1802" height="413" key="GridCell.Tab.0.left" timestamp="1604353610870">
+    <state width="1802" height="277" key="GridCell.Tab.0.center/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604431014410" />
+    <state width="1802" height="277" key="GridCell.Tab.0.left" timestamp="1604431014410">
       <screen x="364" y="1440" width="1920" height="1080" />
     </state>
-    <state width="1802" height="413" key="GridCell.Tab.0.left/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604353610870" />
-    <state width="1802" height="413" key="GridCell.Tab.0.right" timestamp="1604353610870">
+    <state width="1802" height="277" key="GridCell.Tab.0.left/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604431014410" />
+    <state width="1802" height="277" key="GridCell.Tab.0.right" timestamp="1604431014410">
       <screen x="364" y="1440" width="1920" height="1080" />
     </state>
-    <state width="1802" height="413" key="GridCell.Tab.0.right/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604353610870" />
+    <state width="1802" height="277" key="GridCell.Tab.0.right/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604431014410" />
     <state x="849" y="1628" width="974" height="737" key="SettingsEditor" timestamp="1604068140612">
       <screen x="364" y="1440" width="1920" height="1080" />
     </state>
     <state x="849" y="1628" width="1022" height="737" key="SettingsEditor/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604068140612" />
     <state x="539" y="210" width="974" height="737" key="SettingsEditor/364.1440.1920.1080/72.27.1848.1053@72.27.1848.1053" timestamp="1603298523532" />
-    <state x="1107" y="1665" width="863" height="783" key="find.popup" timestamp="1604350684564">
+    <state x="1107" y="1665" width="863" height="783" key="find.popup" timestamp="1604426469988">
       <screen x="364" y="1440" width="1920" height="1080" />
     </state>
-    <state x="1107" y="1665" width="863" height="783" key="find.popup/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604350684564" />
-    <state x="1023" y="1699" width="672" height="678" key="search.everywhere.popup" timestamp="1603993351203">
+    <state x="1107" y="1665" width="863" height="783" key="find.popup/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604426469988" />
+    <state x="1023" y="1699" width="672" height="678" key="search.everywhere.popup" timestamp="1604430506208">
       <screen x="364" y="1440" width="1920" height="1080" />
     </state>
-    <state x="1023" y="1699" width="672" height="678" key="search.everywhere.popup/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1603993351203" />
+    <state x="1023" y="1699" width="672" height="678" key="search.everywhere.popup/364.1440.1920.1080/436.0.2124.1440@364.1440.1920.1080" timestamp="1604430506208" />
   </component>
 </project>

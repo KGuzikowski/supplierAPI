@@ -139,13 +139,6 @@ STATICFILES_FINDERS = [
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
 ]
 
-# MEDIA
-# ------------------------------------------------------------------------------
-# https://docs.djangoproject.com/en/dev/ref/settings/#media-root
-# MEDIA_ROOT = str(APPS_DIR / "media")
-# https://docs.djangoproject.com/en/dev/ref/settings/#media-url
-# MEDIA_URL = "/media/"
-
 # TEMPLATES
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#templates
@@ -239,15 +232,12 @@ LOGGING = {
 # STORAGES
 # ------------------------------------------------------------------------------
 # https://django-storages.readthedocs.io/en/latest/#installation
-INSTALLED_APPS += ["storages"]  # noqa F405
-DEFAULT_FILE_STORAGE = "backend.custom_azure.AzureMediaStorage"
+DEFAULT_FILE_STORAGE = "storages.backends.azure_storage.AzureStorage"
 
-MEDIA_LOCATION = env.str("AZURE_STORAGE_MEDIA_CONTAINER")
-
-AZURE_ACCOUNT_NAME = env.str("AZURE_STORAGE_NAME")
-AZURE_CUSTOM_DOMAIN = f"{AZURE_ACCOUNT_NAME}.blob.core.windows.net"
-MEDIA_URL = f"https://{AZURE_CUSTOM_DOMAIN}/{MEDIA_LOCATION}/"
-
+AZURE_ACCOUNT_NAME = f"{env.str('AZURE_STORAGE_NAME')}.blob.core.windows.net"
+AZURE_CONTAINER = env.str("AZURE_STORAGE_MEDIA_CONTAINER")
+AZURE_ACCOUNT_KEY = env.str("AZURE_STORAGE_KEY")
+AZURE_CONNECTION_STRING = env.str("AZURE_CONNECTION_STRING")
 
 # Your stuff...
 # ------------------------------------------------------------------------------
