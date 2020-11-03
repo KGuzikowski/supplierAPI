@@ -12,11 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0029b429-1960-48c9-a527-7c39b6756828" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/supplierapi/apps/Company/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/supplierapi/apps/Company/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/supplierapi/apps/Company/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/supplierapi/apps/Company/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/supplierapi/apps/Company/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/supplierapi/apps/myAuth/authentication_backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/authentication_backend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/supplierapi/apps/myAuth/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplierapi/apps/myAuth/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/supplierapi/apps/myAuth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/supplierapi/apps/myAuth/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +89,7 @@
       <workItem from="1604344484450" duration="9403000" />
       <workItem from="1604414117030" duration="4639000" />
       <workItem from="1604424686091" duration="4988000" />
-      <workItem from="1604429786113" duration="7566000" />
+      <workItem from="1604429786113" duration="7810000" />
     </task>
     <servers />
   </component>
