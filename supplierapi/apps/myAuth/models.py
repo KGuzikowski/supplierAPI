@@ -15,7 +15,11 @@ class UserManager(BaseUserManager):
         user = self.model(email=email, **extra_fields)
         user.set_password(password)
         user.save(using=self._db)
-        return user
+
+        # here we just don't return what self.model returns
+        # because djongo first need to make few adjustments for MongoDB
+        ready_user = self.get(email=email)
+        return ready_user
 
     def create_user(self, email, password=None, **extra_fields):
         """Create and save a regular User with the given email and password."""
@@ -44,6 +48,7 @@ class User(AbstractUser):
     """Default user for supplierAPI."""
 
     username = None
+    id = None
 
     _id = models.ObjectIdField(primary_key=True)
     first_name = models.CharField(help_text="first name", max_length=150)
