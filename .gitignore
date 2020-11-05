@@ -273,3 +273,4 @@ supplierapi/media/
 
 .env
 .envs/*
+.idea/workspace.xml
