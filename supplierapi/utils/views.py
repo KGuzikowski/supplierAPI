@@ -5,13 +5,7 @@ from rest_framework.viewsets import ModelViewSet
 
 class CustomViewSet(ModelViewSet):
     def get_object(self):
-        """
-        Returns the object the view is displaying.
-
-        You may want to override this if you need to provide non-standard
-        queryset lookups.  Eg if objects are referenced using multiple
-        keyword arguments in the url conf.
-        """
+        """Returns the object the view is displaying."""
         queryset = self.filter_queryset(self.get_queryset())
 
         # Perform the lookup filtering.
