@@ -2,8 +2,8 @@ from django.conf import settings
 from django.contrib import admin
 from django.urls import include, path
 
-from supplierapi.apps.myAuth.urls import router as user_router
-from supplierapi.apps.myAuth.views import CustomAuthToken
+from supplierapi.apps.user.urls import router as user_router
+from supplierapi.apps.user.views import CustomAuthToken
 
 urlpatterns = [
     path(settings.ADMIN_URL, admin.site.urls),

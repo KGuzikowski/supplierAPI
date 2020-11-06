@@ -16,7 +16,7 @@ class UserManager(BaseUserManager):
         user.set_password(password)
         user.save(using=self._db)
 
-        # here we just don't return what self.model returns
+        # Here we just don't return what self.model returns
         # because djongo first need to make few adjustments for MongoDB
         ready_user = self.get(email=email)
         return ready_user
