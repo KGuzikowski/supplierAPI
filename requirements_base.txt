@@ -16,5 +16,5 @@ sqlparse==0.2.4
 Pillow==8.0.1
 
 # REST
-djangorestframework==3.12.1
+djangorestframework==3.12.2
 # django-cors-headers==3.5.0 # https://github.com/adamchainz/django-cors-headers

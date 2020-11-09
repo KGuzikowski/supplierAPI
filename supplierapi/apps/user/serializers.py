@@ -2,9 +2,7 @@ from supplierapi.utils.serializers import CustomModelSerializer
 
 from .models import User
 
-"""
-Below are serializers defined for the User model
-"""
+"""Serializers below are defined for the User model."""
 
 
 class UserDetailSerializer(CustomModelSerializer):
@@ -21,7 +19,11 @@ class UserDetailSerializer(CustomModelSerializer):
             "profile_image",
             "description",
         ]
-        extra_kwargs = {"password": {"write_only": True, "required": True}}
+        extra_kwargs = {
+            "password": {"write_only": True, "required": True},
+            "profile_image": {"required": False},
+            "description": {"required": False},
+        }
 
     def create(self, validated_data):
         user = User.objects.create_user(**validated_data)

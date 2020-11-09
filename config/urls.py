@@ -1,13 +1,21 @@
 from django.conf import settings
 from django.contrib import admin
 from django.urls import include, path
+from rest_framework.routers import DefaultRouter, SimpleRouter
 
-from supplierapi.apps.user.urls import router as user_router
-from supplierapi.apps.user.views import CustomAuthToken
+from supplierapi.apps.user.views import CustomAuthToken, UserViewSet
+
+if settings.DEBUG:
+    router = DefaultRouter()
+else:
+    router = SimpleRouter()
+
+
+router.register("users", UserViewSet)
 
 urlpatterns = [
     path(settings.ADMIN_URL, admin.site.urls),
-    path("users/", include(user_router.urls)),
+    path("", include(router.urls)),
     path("authenticate/", CustomAuthToken.as_view()),
 ]
 
