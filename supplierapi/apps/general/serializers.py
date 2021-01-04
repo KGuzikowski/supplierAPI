@@ -19,9 +19,22 @@ class CountrySerializer(ModelSerializer):
         fields = ["name"]
 
 
-class IndustrySerializer(ModelSerializer):
-    """Serializer for Industry model."""
+class SubIndustrySerializer(ModelSerializer):
+    """Serializer for Industry model (used in IndustrySerializer)."""
 
     class Meta:
         model = Industry
-        fields = ["name", "parent_industry"]
+        fields = ["name"]
+
+    def to_representation(self, instance):
+        return instance.name
+
+
+class IndustrySerializer(ModelSerializer):
+    """Serializer for Industry model."""
+
+    sub_industries = SubIndustrySerializer(many=True, required=False)
+
+    class Meta:
+        model = Industry
+        fields = ["name", "sub_industries"]
