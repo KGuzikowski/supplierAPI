@@ -1,5 +1,8 @@
 from django.contrib.auth.models import AbstractUser, BaseUserManager
-from djongo import models
+from django.core.validators import RegexValidator
+from django.db import models
+
+from supplierapi.utils.regex import letters_only
 
 
 class UserManager(BaseUserManager):
@@ -15,7 +18,11 @@ class UserManager(BaseUserManager):
         user = self.model(email=email, **extra_fields)
         user.set_password(password)
         user.save(using=self._db)
-        return user
+
+        # Here we just don't return what self.model returns
+        # because djongo first need to make few adjustments for MongoDB
+        ready_user = self.get(email=email)
+        return ready_user
 
     def create_user(self, email, password=None, **extra_fields):
         """Create and save a regular User with the given email and password."""
@@ -36,8 +43,8 @@ class UserManager(BaseUserManager):
         return self._create_user(email, password, **extra_fields)
 
 
-def user_directory_path(instance, filename):
-    return f"users/{instance.pk}/{filename}"
+def user_directory_path(instance: AbstractUser, filename: str) -> str:
+    return f"users/{instance.id}/{filename}"
 
 
 class User(AbstractUser):
@@ -45,12 +52,19 @@ class User(AbstractUser):
 
     username = None
 
-    _id = models.ObjectIdField(primary_key=True)
-    first_name = models.CharField(help_text="first name", max_length=150)
-    last_name = models.CharField(help_text="last name", max_length=150)
-    email = models.EmailField(help_text="email address", unique=True)
-    profile_image = models.ImageField(default=None, upload_to=user_directory_path)
-    description = models.TextField(default=None)
+    first_name = models.CharField(
+        max_length=100, validators=[RegexValidator(letters_only)]
+    )
+    last_name = models.CharField(
+        max_length=100, validators=[RegexValidator(letters_only)]
+    )
+    email = models.EmailField(unique=True)
+    profile_image = models.ImageField(
+        upload_to=user_directory_path, null=True, blank=True
+    )
+    description = models.TextField(null=True, blank=True)
+    is_active = models.BooleanField(default=False, null=False, blank=False)
+    confirmed = models.BooleanField(null=False, blank=False, default=False)
 
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []
