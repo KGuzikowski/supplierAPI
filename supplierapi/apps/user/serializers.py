@@ -1,11 +1,11 @@
-from supplierapi.utils.serializers import CustomModelSerializer
+from rest_framework import serializers
 
 from .models import User
 
 """Serializers below are defined for the User model."""
 
 
-class UserDetailSerializer(CustomModelSerializer):
+class UserDetailSerializer(serializers.ModelSerializer):
     """Serializer used when we want to get user details."""
 
     class Meta:
@@ -18,11 +18,15 @@ class UserDetailSerializer(CustomModelSerializer):
             "last_name",
             "profile_image",
             "description",
+            "is_active",
+            "confirmed",
         ]
         extra_kwargs = {
             "password": {"write_only": True, "required": True},
             "profile_image": {"required": False},
             "description": {"required": False},
+            "is_active": {"read_only": True, "required": False},
+            "confirmed": {"read_only": True, "required": False},
         }
 
     def create(self, validated_data):
@@ -30,7 +34,7 @@ class UserDetailSerializer(CustomModelSerializer):
         return user
 
 
-class UserListSerializer(CustomModelSerializer):
+class UserListSerializer(serializers.ModelSerializer):
     """Serializer used when we want user basic data."""
 
     class Meta:
@@ -38,7 +42,7 @@ class UserListSerializer(CustomModelSerializer):
         fields = ["id", "first_name", "last_name", "profile_image"]
 
 
-class UserUpdateSerializer(CustomModelSerializer):
+class UserUpdateSerializer(serializers.ModelSerializer):
     """Serializer used when we want to update user."""
 
     class Meta:
@@ -58,3 +62,10 @@ class UserUpdateSerializer(CustomModelSerializer):
             "profile_image": {"required": False},
             "description": {"required": False},
         }
+
+
+class ChangePasswordSerializer(serializers.Serializer):
+    """Serializer for password change endpoint."""
+
+    old_password = serializers.CharField(required=True, write_only=True)
+    new_password = serializers.CharField(required=True, write_only=True)

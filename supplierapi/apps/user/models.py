@@ -1,6 +1,8 @@
 from django.contrib.auth.models import AbstractUser, BaseUserManager
 from django.core.validators import RegexValidator
-from djongo import models
+from django.db import models
+
+from supplierapi.utils.regex import letters_only
 
 
 class UserManager(BaseUserManager):
@@ -42,33 +44,27 @@ class UserManager(BaseUserManager):
 
 
 def user_directory_path(instance: AbstractUser, filename: str) -> str:
-    return f"users/{instance.pk}/{filename}"
+    return f"users/{instance.id}/{filename}"
 
 
 class User(AbstractUser):
     """Default user for supplierAPI."""
 
     username = None
-    id = None
 
-    _id = models.ObjectIdField(primary_key=True)
     first_name = models.CharField(
-        help_text="first name",
-        max_length=100,
-        validators=[RegexValidator("^[a-zA-Z]+$")],
+        max_length=100, validators=[RegexValidator(letters_only)]
     )
     last_name = models.CharField(
-        help_text="last name",
-        max_length=100,
-        validators=[
-            RegexValidator(
-                "^[a-zA-Z]+$",
-            )
-        ],
+        max_length=100, validators=[RegexValidator(letters_only)]
     )
-    email = models.EmailField(help_text="email address", unique=True)
-    profile_image = models.ImageField(default=None, upload_to=user_directory_path)
-    description = models.TextField(default=None)
+    email = models.EmailField(unique=True)
+    profile_image = models.ImageField(
+        upload_to=user_directory_path, null=True, blank=True
+    )
+    description = models.TextField(null=True, blank=True)
+    is_active = models.BooleanField(default=False, null=False, blank=False)
+    confirmed = models.BooleanField(null=False, blank=False, default=False)
 
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []
